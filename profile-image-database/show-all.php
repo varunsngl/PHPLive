@@ -19,10 +19,13 @@
 	</style>
 
 	<?php 
+		//To select data from table 
 		$selection_query = "SELECT * FROM `profile_file_upload`";
+		//Executing as well as assigning the data to the variable
 		$result = $con->query($selection_query);
 
 		if ($result->num_rows > 0) {
+			//Fetching the data using while loop
 			while ($row = $result->fetch_assoc()) {?>
 
 				<div style="display: inline-block;">
@@ -33,8 +36,8 @@
 					<?php echo "<img src=\"{$profile_base_path}my-profile.jpg\">" ?> -->
 				</div>
 
-			<?php }
-		}
+			<?php }		//ending while loop
+		}	//ending if loop
 	 ?>
 
 	
