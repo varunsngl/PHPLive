@@ -1,10 +1,10 @@
 <?php 
-
+	//simple database connectivity
 	$con = new mysqli(
-			'localhost',
-			'root',
-			'',
-			'php'
+			'localhost', 	//hostname 
+			'root',		//server username
+			'',		//server password
+			'php'		//database name
 		);
 
  ?>
