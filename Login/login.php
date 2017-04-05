@@ -29,6 +29,8 @@
 		<input type="reset" name="reset" value="Reset">
 	</form>
 
+	<a href="forgot.php">Forgot Password</a>
+
 	<?php 
 
 		//Check if username and password is sent through form on submit
@@ -67,6 +69,9 @@
 			}
 			
 		}
-	 ?>
+	?>
+
+
+
 </body>
 </html>
