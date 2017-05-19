@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2017 at 06:16 AM
+-- Generation Time: May 19, 2017 at 07:34 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -51,18 +51,23 @@ CREATE TABLE `users` (
   `name` varchar(200) NOT NULL,
   `Address` varchar(200) NOT NULL,
   `email` varchar(200) NOT NULL,
-  `password` varchar(50) NOT NULL
+  `password` varchar(50) NOT NULL,
+  `question_1` varchar(100) NOT NULL,
+  `answer_1` varchar(100) NOT NULL,
+  `question_2` varchar(100) NOT NULL,
+  `answer_2` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `Address`, `email`, `password`) VALUES
-(1, 'Rajan', '124', 'rajan@rajan.com', 'asdg'),
-(2, 'Naman', '793', 'naman@naman.com', 'rtyui'),
-(3, 'Akash', '821', 'akash@akash.com', 'def'),
-(4, 'Rampa', '923', 'rampa@rampa.com', 'def');
+INSERT INTO `users` (`id`, `name`, `Address`, `email`, `password`, `question_1`, `answer_1`, `question_2`, `answer_2`) VALUES
+(1, 'Rajan', '124', 'rajan@rajan.com', 'asdg', '', '', '', ''),
+(2, 'Naman', '793', 'naman@naman.com', 'rtyui', '', '', '', ''),
+(3, 'Akash', '821', 'akash@akash.com', 'def', '', '', '', ''),
+(4, 'Rampa', '923', 'rampa@rampa.com', 'def', '', '', '', ''),
+(5, 'Jatinder', '1234', 'jatinder.thekites@gmail.com', 'ABCDEF', 'What is your favourite color?', 'green', 'Which was your first phone?', 'China');
 
 --
 -- Indexes for dumped tables
@@ -93,7 +98,7 @@ ALTER TABLE `password_reset`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
